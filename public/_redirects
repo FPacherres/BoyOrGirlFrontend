@@ -1,0 +1,5 @@
+# Proxy al backend en Render
+/api/*   https://boyorgirlbackend.onrender.com/:splat   200
+
+# SPA fallback (todas las rutas al index.html)
+/*       /index.html   200
