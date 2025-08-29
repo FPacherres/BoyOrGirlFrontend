@@ -1,0 +1,64 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --bg-linear: #c6e4f7;
+  --bg-linear-gradient: linear-gradient(161deg,rgba(198, 228, 247, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 224, 242, 1) 100%);
+  --bg-linear-second: #e9eff0;
+  --bg-linear-gradient-second: linear-gradient(180deg, rgba(233, 239, 240, 1) 0%, rgba(233, 239, 240, 1) 49%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  
+  --text-main: #656F88;
+  --text-white: #FFFFFF;
+  --text-error: #FF4D4F;
+
+  --font-size-1: 108px;
+  --font-size-2: 36px;
+  --font-size-3: 24px;
+  --font-size-4: 20px;
+  --font-size-5: 14px;
+  --font-size-6: 10px;
+
+  --bg-boy: #73C2FB;
+  --bg-girl: #FC6998;
+  --bg-neutral: #2A2F3C;
+
+  --font-rubik: "Rubik", sans-serif;
+  --font-luckiest-guy: "Luckiest Guy", cursive;
+  --font-playwrite-au-qld: "Playwrite AU QLD", cursive;
+
+  --radius-1: 8px;
+  --radius-2: 12px;
+
+  --shadow-1: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
