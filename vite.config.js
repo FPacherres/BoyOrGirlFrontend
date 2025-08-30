@@ -16,6 +16,6 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0', // <- clave: escuchar en toda la red
-    port: 5173       // puedes poner otro si quieres
+    port: 8000
   }
 })
