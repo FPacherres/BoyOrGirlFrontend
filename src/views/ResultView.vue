@@ -14,7 +14,7 @@ const genero = ref(null)
 
 onMounted(() => {
   globalStore.loading = false;
-  const evtSource = new EventSource('https://boyorgirlbackend.onrender.com/eventos')
+  const evtSource = new EventSource('faint-merrile-fabdev-6e8e60db.koyeb.app/eventos')
   evtSource.onmessage = (event) => {
     const data = JSON.parse(event.data)
     genero.value = data.genero
