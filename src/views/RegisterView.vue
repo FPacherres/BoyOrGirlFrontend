@@ -68,7 +68,7 @@ const save = async (genero) => {
 
   try {
     globalStore.loading = true;
-    const res = await fetch("faint-merrile-fabdev-6e8e60db.koyeb.app/registrar-genero", {
+    const res = await fetch("https://boyorgirlbackend.onrender.com/registrar-genero", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ genero }),

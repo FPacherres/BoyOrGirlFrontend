@@ -49,7 +49,7 @@ const calcularDiferencia = (fechaObjetivo) => {
 }
 
 onMounted(async () => {
-  const res = await axios.get('faint-merrile-fabdev-6e8e60db.koyeb.app/fecha-objetivo')
+  const res = await axios.get('https://boyorgirlbackend.onrender.com/fecha-objetivo')
   const fechaObjetivo = res.data.fecha
 
   intervalo = setInterval(() => {
